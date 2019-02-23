@@ -10,13 +10,24 @@ import UIKit
 
 class RequestCheckViewController: UIViewController {
 
+    @IBOutlet weak var payeeNameInput: UITextField!
+    @IBOutlet weak var payerEmailInput: UITextField!
+    @IBOutlet weak var amountInput: UITextField!
+    @IBOutlet weak var descriptionInput: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+//    @IBAction func actionOnClick(_ sender: Any) {
+//        requestCheck(payeeNameInput.text!, payerEmailInput.text!, amountInput.text!, descriptionInput.text!)
+//    }
+//
+//    func requestCheck(_ payeeName: String, _ payeeEmail: String, _ amount: String, _ amount: String) {
+//
+//    }
     /*
     // MARK: - Navigation
 

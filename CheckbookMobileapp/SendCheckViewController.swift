@@ -10,6 +10,17 @@ import UIKit
 
 class SendCheckViewController: UIViewController {
 
+    @IBOutlet weak var payeeNameInput: UITextField!
+    @IBOutlet weak var payeeEmail: UITextField!
+    @IBOutlet weak var amountInput: UITextField!
+    @IBOutlet weak var descriptionInput: UITextField!
+    
+//    
+//    @IBAction func sendCheck(_ sender: Any) {
+//    }
+//    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

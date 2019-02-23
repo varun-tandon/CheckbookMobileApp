@@ -14,6 +14,8 @@
 		E287FF06222197E100848905 /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E287FEFE2221974800848905 /* OAuth2.framework */; };
 		E287FF07222197FB00848905 /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E287FEFE2221974800848905 /* OAuth2.framework */; };
 		E287FF08222197FB00848905 /* OAuth2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E287FEFE2221974800848905 /* OAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E287FF0D2221E9D600848905 /* RequestCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287FF0C2221E9D600848905 /* RequestCheckViewController.swift */; };
+		E287FF0F2221F57E00848905 /* SendCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E287FF0E2221F57E00848905 /* SendCheckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		3395E7D6221E842D00023E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3395E7D8221E842D00023E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E287FEF42221974000848905 /* OAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2.xcodeproj; path = OAuth2/OAuth2.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E287FF0C2221E9D600848905 /* RequestCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCheckViewController.swift; sourceTree = "<group>"; };
+		E287FF0E2221F57E00848905 /* SendCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendCheckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				3395E7CA221E842C00023E48 /* AppDelegate.swift */,
 				E287FEF42221974000848905 /* OAuth2.xcodeproj */,
 				3395E7D0221E842C00023E48 /* Main.storyboard */,
+				E287FF0C2221E9D600848905 /* RequestCheckViewController.swift */,
+				E287FF0E2221F57E00848905 /* SendCheckViewController.swift */,
 				3395E7D3221E842D00023E48 /* Assets.xcassets */,
 				3395E7D5221E842D00023E48 /* LaunchScreen.storyboard */,
 				3395E7D8221E842D00023E48 /* Info.plist */,
@@ -257,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E287FF0F2221F57E00848905 /* SendCheckViewController.swift in Sources */,
+				E287FF0D2221E9D600848905 /* RequestCheckViewController.swift in Sources */,
 				3395E7CB221E842C00023E48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
