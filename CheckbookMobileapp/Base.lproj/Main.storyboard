@@ -10,32 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dashboard-->
-        <scene sceneID="hNz-n2-bh7">
-            <objects>
-                <viewController title="Dashboard" id="9pv-A4-QxB" customClass="FirstViewController" customModule="CheckbookMobileapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uaa-5g-ob7">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="uaa-5g-ob7" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="N8J-90-PTk"/>
-                            <constraint firstItem="uaa-5g-ob7" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="PSZ-lZ-xYb"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="uaa-5g-ob7" secondAttribute="trailing" id="hAV-1i-FUV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard-toolbar" id="acW-dT-cKf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="WDa-01-abZ">
             <objects>
@@ -51,6 +25,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVf-WX-z5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1513" y="-321"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="O93-j7-GoX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aA1-fG-Nd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="vi7-3z-Sab" customClass="DashboardTableViewController" customModule="CheckbookMobileapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dex-Bn-EMW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckCell" rowHeight="90" id="ohp-KT-Lhp" customClass="UICheckCellTableViewCell" customModule="CheckbookMobileapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ohp-KT-Lhp" id="RPA-cy-3Vd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsL-mL-lRK">
+                                            <rect key="frame" x="20" y="33" width="240" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjA-0E-41c">
+                                            <rect key="frame" x="20" y="58" width="240" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIL-hO-enq">
+                                            <rect key="frame" x="306" y="35" width="88" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVD-TV-OnS">
+                                            <rect key="frame" x="20" y="10" width="240" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="checkAmountLabel" destination="IjA-0E-41c" id="XaG-J3-qoP"/>
+                                    <outlet property="checkDateLabel" destination="bsL-mL-lRK" id="aX1-JR-7HG"/>
+                                    <outlet property="checkNumberLabel" destination="WVD-TV-OnS" id="ekh-ny-yT4"/>
+                                    <outlet property="checkStatusLabel" destination="yIL-hO-enq" id="Fbf-va-eYt"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vi7-3z-Sab" id="4Z2-hL-Mnd"/>
+                            <outlet property="delegate" destination="vi7-3z-Sab" id="B7Q-OU-ruh"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard-toolbar" id="a25-I9-4vn"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="-321.42857142857139"/>
         </scene>
         <!--Send-->
         <scene sceneID="wg7-f3-ORb">
@@ -131,7 +171,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="vi7-3z-Sab" kind="relationship" relationship="viewControllers" id="vcD-3s-a7n"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="z82-5B-ObN" kind="relationship" relationship="viewControllers" id="em1-NT-zBp"/>
                         <segue destination="hJ1-hw-BY6" kind="relationship" relationship="viewControllers" id="ILI-hg-Hhv"/>

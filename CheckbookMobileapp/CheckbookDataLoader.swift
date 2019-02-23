@@ -15,7 +15,7 @@ import OAuth2
  */
 class CheckbookDataLoader: OAuth2DataLoader {
     
-    let baseURL = URL(string: "https://checkbook.io")!
+    let baseURL = URL(string: "https://sandbox.checkbook.io")!
     let keys = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "Keys", ofType: "plist") ?? "")
 
     
@@ -23,8 +23,8 @@ class CheckbookDataLoader: OAuth2DataLoader {
         let oauth = OAuth2CodeGrant(settings: [
             "client_id": keys!["client_id"],
             "client_secret": keys!["client_secret"],
-            "authorize_uri": "https://checkbook.io/oauth/authorize",
-            "token_uri": "https://checkbook.io/oauth/token",
+            "authorize_uri": "https://sandbox.checkbook.io/oauth/authorize",
+            "token_uri": "https://sandbox.checkbook.io/oauth/token",
             "scope": "check",
             "redirect_uris": ["checkbookoauthapp://oauth/callback"],
             ])
@@ -34,7 +34,7 @@ class CheckbookDataLoader: OAuth2DataLoader {
         alsoIntercept403 = true
     }
     
-    /** Perform a request against the API and return decoded JSON or an Error. */
+    /* Perform a request against the API and return decoded JSON or an Error. */
     func request(path: String, callback: @escaping ((OAuth2JSON?, Error?) -> Void)) {
         let url = baseURL.appendingPathComponent(path)
         let req = oauth2.request(forURL: url)
