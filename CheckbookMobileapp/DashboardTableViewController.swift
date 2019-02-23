@@ -52,7 +52,7 @@ class DashboardTableViewController: UITableViewController {
         cell.checkDateLabel.text = check["date"].string
         let wasSent = (check["direction"].stringValue == "OUTGOING")
         cell.directionLabel.text = wasSent ? "Sent" : "Recieved"
-        cell.otherPartyLabel.text = wasSent ? check["sender"].stringValue : check["recipient"].stringValue
+        cell.otherPartyLabel.text = wasSent ? check["recipient"].stringValue : check["sender"].stringValue
         return cell
     }
 

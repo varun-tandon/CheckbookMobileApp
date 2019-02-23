@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Foundation
+import Alamofire
+import SwiftyJSON
 
 class SendCheckViewController: UIViewController {
 
@@ -40,11 +43,33 @@ class SendCheckViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    //  @IBAction func actionOnClick(_ sender: Any) {
-    //        sendCheck(payeeNameInput.text!, payeeEmailInput.text!, amountInput.text!, descriptionInput.text!)
-    //    }
-    //
-    //    func sendCheck(_ payeeName: String, _ payeeEmail: String, _ amount: String, _ amount: String) {
-    //
-    //    }
+    @IBAction func touchUpInsideSendCheck(_ sender: Any) {
+        sendCheck(payerNameInput.text!, payerEmailInput.text!, amountInput.text!, descriptionInput.text)
+        payerNameInput.text = ""
+        payerEmailInput.text = ""
+        amountInput.text = ""
+        descriptionInput.text = ""
+        
+    }
+    
+    func sendCheck(_ payeeName: String, _ payeeEmail: String, _ amount: String, _ description: String?) {
+        
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer b2vssr6S6ymQD9akd46MzVPbHCvTAK",
+            ]
+        let parameters: Parameters = [
+            "recipient": payeeEmail,
+            "name": payeeName,
+            "amount": Float(amount)!,
+            "description": description ?? ""
+            ]
+        
+        AF.request("https://sandbox.checkbook.io/v3/check/digital", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
+            if let result = response.result.value {
+                print(result)
+            }
+            
+        }
+
+    }
 }

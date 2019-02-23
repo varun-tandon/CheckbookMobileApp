@@ -193,7 +193,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send Check!"/>
                                 <connections>
-                                    <action selector="sendCheck:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rv8-ZD-KIU"/>
+                                    <action selector="touchUpInsideSendCheck:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="6Pm-4m-CSl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -210,23 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797" y="813"/>
-        </scene>
-        <!--Recurring-->
-        <scene sceneID="P6i-P7-s3Z">
-            <objects>
-                <viewController id="hJ1-hw-BY6" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cUD-4a-ECf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ani-0E-LQA"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Recurring" image="recur-toolbar" id="X80-41-1O4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b4O-vm-MjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1513" y="359"/>
+            <point key="canvasLocation" x="1512" y="358"/>
         </scene>
         <!--Title-->
         <scene sceneID="79U-Cn-Vcv">
@@ -327,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6v-YL-nT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1.4492753623188408" y="812.94642857142856"/>
+            <point key="canvasLocation" x="748" y="358"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -342,7 +326,6 @@
                         <segue destination="vi7-3z-Sab" kind="relationship" relationship="viewControllers" id="vcD-3s-a7n"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="z82-5B-ObN" kind="relationship" relationship="viewControllers" id="em1-NT-zBp"/>
-                        <segue destination="hJ1-hw-BY6" kind="relationship" relationship="viewControllers" id="ILI-hg-Hhv"/>
                         <segue destination="MFG-aW-tgI" kind="relationship" relationship="viewControllers" id="wXj-qG-UHQ"/>
                     </connections>
                 </tabBarController>
@@ -354,7 +337,6 @@
     <resources>
         <image name="dashboard-toolbar" width="30" height="30"/>
         <image name="envelope" width="1024" height="1024"/>
-        <image name="recur-toolbar" width="30" height="30"/>
         <image name="request-check-toolbar" width="30" height="30"/>
         <image name="send-check-toolbar" width="30" height="30"/>
         <image name="settings-toolbar" width="30" height="30"/>
