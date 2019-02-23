@@ -11,12 +11,10 @@
 		3395E7D2221E842C00023E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D0221E842C00023E48 /* Main.storyboard */; };
 		3395E7D4221E842D00023E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D3221E842D00023E48 /* Assets.xcassets */; };
 		3395E7D7221E842D00023E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D5221E842D00023E48 /* LaunchScreen.storyboard */; };
-		33A48C82222186AB004CA920 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33A48C81222186AB004CA920 /* Keys.plist */; };
-		33A48C8722218FBA004CA920 /* CheckbookDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A48C8622218FBA004CA920 /* CheckbookDataLoader.swift */; };
 		33A48C8B2221C423004CA920 /* UICheckCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A48C8A2221C423004CA920 /* UICheckCellTableViewCell.swift */; };
 		33A48C8D2221C61F004CA920 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A48C8C2221C61F004CA920 /* DashboardTableViewController.swift */; };
-		33B51ED0221F8554008F5C1C /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B51ECA221F853F008F5C1C /* OAuth2.framework */; };
-		33B51ED5221F85F3008F5C1C /* OAuth2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33B51ECA221F853F008F5C1C /* OAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33B51ED0221F8554008F5C1C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		33B51ED5221F85F3008F5C1C /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33EF9CA82221D36D00EC1ECD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EF9C982221D30900EC1ECD /* Alamofire.framework */; };
 		33EF9CA92221D36D00EC1ECD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33EF9C982221D30900EC1ECD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33EF9CC52221D52100EC1ECD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EF9CB82221D4D400EC1ECD /* SwiftyJSON.framework */; };
@@ -24,47 +22,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E287FEFB2221974800848905 /* PBXContainerItemProxy */ = {
+		33C0A0122221EE4400E6CC5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E287FEF42221974000848905 /* OAuth2.xcodeproj */;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEE209471942772800736F1A;
 			remoteInfo = OAuth2macOS;
 		};
-		E287FEFD2221974800848905 /* PBXContainerItemProxy */ = {
+		33C0A0142221EE4400E6CC5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E287FEF42221974000848905 /* OAuth2.xcodeproj */;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEDB8624193FAAE500C4EEA1;
 			remoteInfo = OAuth2iOS;
 		};
-		E287FEFF2221974800848905 /* PBXContainerItemProxy */ = {
+		33C0A0162221EE4400E6CC5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E287FEF42221974000848905 /* OAuth2.xcodeproj */;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 659854461C5B3BEA00237D39;
 			remoteInfo = OAuth2tvOS;
 		};
-		E287FF012221974800848905 /* PBXContainerItemProxy */ = {
+		33C0A0182221EE4400E6CC5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E287FEF42221974000848905 /* OAuth2.xcodeproj */;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEE209A219427DFE00736F1A;
 			remoteInfo = OAuth2Tests;
-		};
-		E287FF03222197D100848905 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E287FEF42221974000848905 /* OAuth2.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EEDB8623193FAAE500C4EEA1;
-			remoteInfo = OAuth2iOS;
-		};
-		E287FF09222197FB00848905 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E287FEF42221974000848905 /* OAuth2.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EEDB8623193FAAE500C4EEA1;
-			remoteInfo = OAuth2iOS;
 		};
 		33EF9C972221D30900EC1ECD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -187,7 +171,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				33B51ED5221F85F3008F5C1C /* OAuth2.framework in Embed Frameworks */,
+				33B51ED5221F85F3008F5C1C /* (null) in Embed Frameworks */,
 				33EF9CA92221D36D00EC1ECD /* Alamofire.framework in Embed Frameworks */,
 				33EF9CC62221D52100EC1ECD /* SwiftyJSON.framework in Embed Frameworks */,
 			);
@@ -203,8 +187,6 @@
 		3395E7D3221E842D00023E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3395E7D6221E842D00023E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3395E7D8221E842D00023E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33A48C81222186AB004CA920 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
-		33A48C8622218FBA004CA920 /* CheckbookDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckbookDataLoader.swift; sourceTree = "<group>"; };
 		33A48C8A2221C423004CA920 /* UICheckCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICheckCellTableViewCell.swift; sourceTree = "<group>"; };
 		33A48C8C2221C61F004CA920 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
 		33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2.xcodeproj; path = OAuth2/OAuth2.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -217,7 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33B51ED0221F8554008F5C1C /* OAuth2.framework in Frameworks */,
+				33B51ED0221F8554008F5C1C /* (null) in Frameworks */,
 				33EF9CA82221D36D00EC1ECD /* Alamofire.framework in Frameworks */,
 				33EF9CC52221D52100EC1ECD /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -232,6 +214,7 @@
 				3395E7C9221E842C00023E48 /* CheckbookMobileapp */,
 				3395E7C8221E842C00023E48 /* Products */,
 				E287FF05222197E100848905 /* Frameworks */,
+				33C0A0062221EE4300E6CC5A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,7 +235,6 @@
 				33A48C8A2221C423004CA920 /* UICheckCellTableViewCell.swift */,
 				33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */,
 				3395E7CA221E842C00023E48 /* AppDelegate.swift */,
-				E287FEF42221974000848905 /* OAuth2.xcodeproj */,
 				3395E7D0221E842C00023E48 /* Main.storyboard */,
 				3395E7D3221E842D00023E48 /* Assets.xcassets */,
 				3395E7D5221E842D00023E48 /* LaunchScreen.storyboard */,
@@ -261,22 +243,22 @@
 			path = CheckbookMobileapp;
 			sourceTree = "<group>";
 		};
-		E287FEF52221974000848905 /* Products */ = {
+		33C0A0022221EE4300E6CC5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E287FEFC2221974800848905 /* OAuth2.framework */,
-				E287FEFE2221974800848905 /* OAuth2.framework */,
-				E287FF002221974800848905 /* OAuth2.framework */,
-				E287FF022221974800848905 /* OAuth2Tests.xctest */,
+				33C0A0132221EE4400E6CC5A /* OAuth2.framework */,
+				33C0A0152221EE4400E6CC5A /* OAuth2.framework */,
+				33C0A0172221EE4400E6CC5A /* OAuth2.framework */,
+				33C0A0192221EE4400E6CC5A /* OAuth2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E287FF05222197E100848905 /* Frameworks */ = {
+		33C0A0062221EE4300E6CC5A /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Frameworks;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		33EF9C8D2221D30900EC1ECD /* Products */ = {
@@ -307,6 +289,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E287FF05222197E100848905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,8 +311,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				33B51ED2221F855E008F5C1C /* PBXTargetDependency */,
-				33B51ED7221F85F3008F5C1C /* PBXTargetDependency */,
 				33EF9CAB2221D36D00EC1ECD /* PBXTargetDependency */,
 				33EF9CC82221D52100EC1ECD /* PBXTargetDependency */,
 			);
@@ -364,7 +351,7 @@
 					ProjectRef = 33EF9C8C2221D30900EC1ECD /* Alamofire.xcodeproj */;
 				},
 				{
-					ProductGroup = 33B51EC1221F853E008F5C1C /* Products */;
+					ProductGroup = 33C0A0022221EE4300E6CC5A /* Products */;
 					ProjectRef = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
 				},
 				{
@@ -380,32 +367,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E287FEFC2221974800848905 /* OAuth2.framework */ = {
+		33C0A0132221EE4400E6CC5A /* OAuth2.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = OAuth2.framework;
-			remoteRef = E287FEFB2221974800848905 /* PBXContainerItemProxy */;
+			remoteRef = 33C0A0122221EE4400E6CC5A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E287FEFE2221974800848905 /* OAuth2.framework */ = {
+		33C0A0152221EE4400E6CC5A /* OAuth2.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = OAuth2.framework;
-			remoteRef = E287FEFD2221974800848905 /* PBXContainerItemProxy */;
+			remoteRef = 33C0A0142221EE4400E6CC5A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E287FF002221974800848905 /* OAuth2.framework */ = {
+		33C0A0172221EE4400E6CC5A /* OAuth2.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = OAuth2.framework;
-			remoteRef = E287FEFF2221974800848905 /* PBXContainerItemProxy */;
+			remoteRef = 33C0A0162221EE4400E6CC5A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E287FF022221974800848905 /* OAuth2Tests.xctest */ = {
+		33C0A0192221EE4400E6CC5A /* OAuth2Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = OAuth2Tests.xctest;
-			remoteRef = E287FF012221974800848905 /* PBXContainerItemProxy */;
+			remoteRef = 33C0A0182221EE4400E6CC5A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		33EF9C982221D30900EC1ECD /* Alamofire.framework */ = {
@@ -528,7 +515,6 @@
 			files = (
 				33A48C8D2221C61F004CA920 /* DashboardTableViewController.swift in Sources */,
 				33A48C8B2221C423004CA920 /* UICheckCellTableViewCell.swift in Sources */,
-				33A48C8722218FBA004CA920 /* CheckbookDataLoader.swift in Sources */,
 				3395E7CB221E842C00023E48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,16 +522,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E287FF04222197D100848905 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OAuth2iOS;
-			targetProxy = E287FF03222197D100848905 /* PBXContainerItemProxy */;
-		};
-		E287FF0A222197FB00848905 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OAuth2iOS;
-			targetProxy = E287FF09222197FB00848905 /* PBXContainerItemProxy */;
-		};
 		33EF9CAB2221D36D00EC1ECD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";

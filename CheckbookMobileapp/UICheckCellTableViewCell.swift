@@ -14,6 +14,8 @@ class UICheckCellTableViewCell: UITableViewCell {
     @IBOutlet weak var checkStatusLabel: UILabel!
     @IBOutlet weak var checkAmountLabel: UILabel!
     @IBOutlet weak var checkDateLabel: UILabel!
+    @IBOutlet weak var directionLabel: UILabel!
+    @IBOutlet weak var otherPartyLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

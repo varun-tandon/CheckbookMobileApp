@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import OAuth2
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

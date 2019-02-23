@@ -44,13 +44,15 @@ class DashboardTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? UICheckCellTableViewCell else {
             fatalError("not an instance of CheckCell")
         }
-        print(json_response)
+        
         let check = json_response["checks"][indexPath.row]
         cell.checkNumberLabel.text = check["number"].string
         cell.checkStatusLabel.text = check["status"].string
         cell.checkAmountLabel.text = "$" + (check["amount"].number?.stringValue)!
         cell.checkDateLabel.text = check["date"].string
-
+        let wasSent = (check["direction"].stringValue == "OUTGOING")
+        cell.directionLabel.text = wasSent ? "Sent" : "Recieved"
+        cell.otherPartyLabel.text = wasSent ? check["sender"].stringValue : check["recipient"].stringValue
         return cell
     }
 
