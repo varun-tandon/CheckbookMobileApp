@@ -7,13 +7,27 @@
 //
 
 import UIKit
+import OAuth2
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var keys: NSDictionary?
+    if let path = Bundle.main.path(forResource: "Keys", ofType: "plist") {
+        keys = NSDictionary(contentsOfFile: path)
+    }
+    let oauth2 = OAuth2CodeGrant(settings: [
+        "client_id": "my_swift_app",
+        "client_secret": "C7447242",
+        "authorize_uri": "https://github.com/login/oauth/authorize",
+        "token_uri": "https://github.com/login/oauth/access_token",   // code grant only
+        "redirect_uris": ["myapp://oauth/callback"],   // register your own "myapp" scheme in Info.plist
+        "scope": "user repo:status",
+        "secret_in_body": true,    // Github needs this
+        "keychain": false,         // if you DON'T want keychain integration
+        ] as OAuth2JSON)
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

@@ -8,22 +8,83 @@
 
 /* Begin PBXBuildFile section */
 		3395E7CB221E842C00023E48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3395E7CA221E842C00023E48 /* AppDelegate.swift */; };
-		3395E7CD221E842C00023E48 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3395E7CC221E842C00023E48 /* FirstViewController.swift */; };
-		3395E7CF221E842C00023E48 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3395E7CE221E842C00023E48 /* SecondViewController.swift */; };
 		3395E7D2221E842C00023E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D0221E842C00023E48 /* Main.storyboard */; };
 		3395E7D4221E842D00023E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D3221E842D00023E48 /* Assets.xcassets */; };
 		3395E7D7221E842D00023E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D5221E842D00023E48 /* LaunchScreen.storyboard */; };
+		33A48C82222186AB004CA920 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33A48C81222186AB004CA920 /* Keys.plist */; };
+		33B51ED0221F8554008F5C1C /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B51ECA221F853F008F5C1C /* OAuth2.framework */; };
+		33B51ED4221F85F3008F5C1C /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B51ECA221F853F008F5C1C /* OAuth2.framework */; };
+		33B51ED5221F85F3008F5C1C /* OAuth2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33B51ECA221F853F008F5C1C /* OAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33B51EC7221F853F008F5C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE209471942772800736F1A;
+			remoteInfo = OAuth2macOS;
+		};
+		33B51EC9221F853F008F5C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEDB8624193FAAE500C4EEA1;
+			remoteInfo = OAuth2iOS;
+		};
+		33B51ECB221F853F008F5C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 659854461C5B3BEA00237D39;
+			remoteInfo = OAuth2tvOS;
+		};
+		33B51ECD221F853F008F5C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE209A219427DFE00736F1A;
+			remoteInfo = OAuth2Tests;
+		};
+		33B51ED1221F855E008F5C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEDB8623193FAAE500C4EEA1;
+			remoteInfo = OAuth2iOS;
+		};
+		33B51ED6221F85F3008F5C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEDB8623193FAAE500C4EEA1;
+			remoteInfo = OAuth2iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33B51ED8221F85F4008F5C1C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33B51ED5221F85F3008F5C1C /* OAuth2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3395E7C7221E842C00023E48 /* CheckbookMobileapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckbookMobileapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3395E7CA221E842C00023E48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3395E7CC221E842C00023E48 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3395E7CE221E842C00023E48 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3395E7D1221E842C00023E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3395E7D3221E842D00023E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3395E7D6221E842D00023E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3395E7D8221E842D00023E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A48C81222186AB004CA920 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2.xcodeproj; path = OAuth2/OAuth2.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B51ED0221F8554008F5C1C /* OAuth2.framework in Frameworks */,
+				33B51ED4221F85F3008F5C1C /* OAuth2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +105,7 @@
 			children = (
 				3395E7C9221E842C00023E48 /* CheckbookMobileapp */,
 				3395E7C8221E842C00023E48 /* Products */,
+				33B51ECF221F8554008F5C1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +120,33 @@
 		3395E7C9221E842C00023E48 /* CheckbookMobileapp */ = {
 			isa = PBXGroup;
 			children = (
+				33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */,
 				3395E7CA221E842C00023E48 /* AppDelegate.swift */,
-				3395E7CC221E842C00023E48 /* FirstViewController.swift */,
-				3395E7CE221E842C00023E48 /* SecondViewController.swift */,
 				3395E7D0221E842C00023E48 /* Main.storyboard */,
 				3395E7D3221E842D00023E48 /* Assets.xcassets */,
 				3395E7D5221E842D00023E48 /* LaunchScreen.storyboard */,
 				3395E7D8221E842D00023E48 /* Info.plist */,
+				33A48C81222186AB004CA920 /* Keys.plist */,
 			);
 			path = CheckbookMobileapp;
+			sourceTree = "<group>";
+		};
+		33B51EC1221F853E008F5C1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33B51EC8221F853F008F5C1C /* OAuth2.framework */,
+				33B51ECA221F853F008F5C1C /* OAuth2.framework */,
+				33B51ECC221F853F008F5C1C /* OAuth2.framework */,
+				33B51ECE221F853F008F5C1C /* OAuth2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33B51ECF221F8554008F5C1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,10 +159,13 @@
 				3395E7C3221E842C00023E48 /* Sources */,
 				3395E7C4221E842C00023E48 /* Frameworks */,
 				3395E7C5221E842C00023E48 /* Resources */,
+				33B51ED8221F85F4008F5C1C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				33B51ED2221F855E008F5C1C /* PBXTargetDependency */,
+				33B51ED7221F85F3008F5C1C /* PBXTargetDependency */,
 			);
 			name = CheckbookMobileapp;
 			productName = CheckbookMobileapp;
@@ -113,6 +198,12 @@
 			mainGroup = 3395E7BE221E842C00023E48;
 			productRefGroup = 3395E7C8221E842C00023E48 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 33B51EC1221F853E008F5C1C /* Products */;
+					ProjectRef = 33B51EC0221F853E008F5C1C /* OAuth2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3395E7C6221E842C00023E48 /* CheckbookMobileapp */,
@@ -120,11 +211,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		33B51EC8221F853F008F5C1C /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = 33B51EC7221F853F008F5C1C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33B51ECA221F853F008F5C1C /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = 33B51EC9221F853F008F5C1C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33B51ECC221F853F008F5C1C /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = 33B51ECB221F853F008F5C1C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33B51ECE221F853F008F5C1C /* OAuth2Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuth2Tests.xctest;
+			remoteRef = 33B51ECD221F853F008F5C1C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		3395E7C5221E842C00023E48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A48C82222186AB004CA920 /* Keys.plist in Resources */,
 				3395E7D7221E842D00023E48 /* LaunchScreen.storyboard in Resources */,
 				3395E7D4221E842D00023E48 /* Assets.xcassets in Resources */,
 				3395E7D2221E842C00023E48 /* Main.storyboard in Resources */,
@@ -138,13 +261,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3395E7CF221E842C00023E48 /* SecondViewController.swift in Sources */,
 				3395E7CB221E842C00023E48 /* AppDelegate.swift in Sources */,
-				3395E7CD221E842C00023E48 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33B51ED2221F855E008F5C1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuth2iOS;
+			targetProxy = 33B51ED1221F855E008F5C1C /* PBXContainerItemProxy */;
+		};
+		33B51ED7221F85F3008F5C1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuth2iOS;
+			targetProxy = 33B51ED6221F85F3008F5C1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3395E7D0221E842C00023E48 /* Main.storyboard */ = {
@@ -285,6 +419,7 @@
 		3395E7DC221E842D00023E48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FBR59BN46;
@@ -303,6 +438,7 @@
 		3395E7DD221E842D00023E48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FBR59BN46;
