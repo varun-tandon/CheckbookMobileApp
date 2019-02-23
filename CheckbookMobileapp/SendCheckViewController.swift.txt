@@ -1,5 +1,5 @@
 //
-//  RequestCheckViewController.swift
+//  SendCheckViewController.swift
 //  CheckbookMobileapp
 //
 //  Created by Vikram Shirsat on 2/23/19.
@@ -8,12 +8,18 @@
 
 import UIKit
 
-class RequestCheckViewController: UIViewController {
+class SendCheckViewController: UIViewController {
 
     @IBOutlet weak var payeeNameInput: UITextField!
-    @IBOutlet weak var payeeEmailInput: UITextField!
+    @IBOutlet weak var payeeEmail: UITextField!
     @IBOutlet weak var amountInput: UITextField!
     @IBOutlet weak var descriptionInput: UITextField!
+    
+//    
+//    @IBAction func sendCheck(_ sender: Any) {
+//    }
+//    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +27,7 @@ class RequestCheckViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-//    @IBAction func actionOnClick(_ sender: Any) {
-//        requestCheck(payeeNameInput.text!, payerEmailInput.text!, amountInput.text!, descriptionInput.text!)
-//    }
-//
-//    func requestCheck(_ payeeName: String, _ payeeEmail: String, _ amount: String, _ amount: String) {
-//
-//    }
+
     /*
     // MARK: - Navigation
 
@@ -37,11 +37,5 @@ class RequestCheckViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    //    @IBAction func actionOnClick(_ sender: Any) {
-    //        requestCheck(payerNameInput.text!, payerEmailInput.text!, amountInput.text!, descriptionInput.text!)
-    //    }
-    //
-    //    func requestCheck(_ payerName: String, _ payermail: String, _ amount: String, _ amount: String) {
-    //
-    //    }
+
 }

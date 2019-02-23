@@ -10,10 +10,13 @@ import UIKit
 
 class SendCheckViewController: UIViewController {
 
-    @IBOutlet weak var payeeNameInput: UITextField!
-    @IBOutlet weak var payeeEmail: UITextField!
+
+    @IBOutlet weak var payerNameInput: UITextField!
+    @IBOutlet weak var payerEmailInput: UITextField!
     @IBOutlet weak var amountInput: UITextField!
     @IBOutlet weak var descriptionInput: UITextField!
+    
+    
     
 //    
 //    @IBAction func sendCheck(_ sender: Any) {
@@ -37,5 +40,11 @@ class SendCheckViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    //  @IBAction func actionOnClick(_ sender: Any) {
+    //        sendCheck(payeeNameInput.text!, payeeEmailInput.text!, amountInput.text!, descriptionInput.text!)
+    //    }
+    //
+    //    func sendCheck(_ payeeName: String, _ payeeEmail: String, _ amount: String, _ amount: String) {
+    //
+    //    }
 }
